@@ -1,0 +1,92 @@
+{
+  "data_dir": "data",
+  "allow_remote_models": false,
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "retrieval": {
+    "recall_k": 50,
+    "candidate_k": 30,
+    "rrf_k": 60,
+    "dense_min_score": 0.4,
+    "bge_min_score": 0.4,
+    "visual_min_score": 0.3,
+    "weights": {
+      "BM25": 2.0,
+      "dense": 1.0,
+      "BGE-M3": 1.0,
+      "BGE-M3-dense": 1.0,
+      "图文向量": 1.0
+    }
+  },
+  "sparse_model_path": "",
+  "watch_dir": "",
+  "watch_interval": 30,
+  "chat": {
+    "url": "",
+    "model": "deepseek-flash",
+    "api_key_env": "",
+    "enabled": false,
+    "base_url": "https://api.deepseek.com",
+    "timeout": 120,
+    "request_options": {
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "vision": {
+    "url": "",
+    "model": "deepseek-flash",
+    "api_key_env": "",
+    "enabled": false,
+    "base_url": "https://api.deepseek.com",
+    "timeout": 120,
+    "request_options": {
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "embedding": {
+    "url": "",
+    "model": "Qwen3-Embedding-8B",
+    "api_key_env": "",
+    "base_url": "https://ai.gitee.com/v1",
+    "dimensions": 1024,
+    "timeout": 120,
+    "enabled": false
+  },
+  "reranker": {
+    "url": "",
+    "model": "Qwen3-Reranker-8B",
+    "api_key_env": "",
+    "enabled": false,
+    "base_url": "https://ai.gitee.com/v1",
+    "timeout": 20,
+    "retries": 1
+  },
+  "bge": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "bge-m3",
+    "dimensions": 1024,
+    "api_key_env": "",
+    "timeout": 90,
+    "enabled": false
+  },
+  "visual_embedding": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "jina-embeddings-v4",
+    "dimensions": 2048,
+    "api_key_env": "",
+    "timeout": 120,
+    "enabled": false
+  },
+  "ingestion": {
+    "batch_size": 8,
+    "workers": 2,
+    "retries": 2,
+    "retry_backoff": 0.5
+  }
+}

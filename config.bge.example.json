@@ -1,0 +1,9 @@
+{
+  "bge": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "bge-m3",
+    "dimensions": 1024,
+    "api_key_env": "",
+    "timeout": 90
+  }
+}

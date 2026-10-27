@@ -1,0 +1,17 @@
+{
+  "allow_remote_models": false,
+  "enable_reranker": false,
+  "embedding": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "Qwen3-Embedding-8B",
+    "dimensions": 1024,
+    "api_key_env": "",
+    "timeout": 120
+  },
+  "reranker": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "Qwen3-Reranker-8B",
+    "api_key_env": "",
+    "timeout": 60
+  }
+}

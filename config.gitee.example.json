@@ -1,0 +1,31 @@
+{
+  "allow_remote_models": false,
+  "chat": {
+    "enabled": false,
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "",
+    "api_key_env": "",
+    "timeout": 30
+  },
+  "vision": {
+    "enabled": false,
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "",
+    "api_key_env": "",
+    "timeout": 60
+  },
+  "embedding": {
+    "enabled": false,
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "",
+    "api_key_env": "",
+    "timeout": 120
+  },
+  "reranker": {
+    "enabled": false,
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "",
+    "api_key_env": "",
+    "timeout": 30
+  }
+}

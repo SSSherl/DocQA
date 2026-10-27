@@ -1,0 +1,9 @@
+{
+  "visual_embedding": {
+    "base_url": "https://ai.gitee.com/v1",
+    "model": "jina-embeddings-v4",
+    "dimensions": 2048,
+    "api_key_env": "",
+    "timeout": 120
+  }
+}
